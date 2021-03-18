@@ -1,4 +1,4 @@
-.port-title{ 
+.reveal.fadeInDown{ 
     display: flex;
     justify-content: center;
     color:black;
@@ -7,6 +7,29 @@
     font-size: 4em;
     letter-spacing: .15em;
     text-transform: uppercase;
+    margin-bottom: 40px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateY(-120px);
+}
+
+.reveal.fadeInDown.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.reveal.fadeInLeft{
+    
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateX(-100px);
+}
+
+.reveal.fadeInLeft.visible {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .portfolio {
@@ -22,6 +45,7 @@
    display: flex;
    justify-content: center;
    letter-spacing: .15em;
+   margin-bottom: 0;
 }
 
 .portfolio p {

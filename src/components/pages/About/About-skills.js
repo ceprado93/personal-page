@@ -1,25 +1,42 @@
-import { Col, Row, Container } from 'react-bootstrap'
+import { useState, useLayoutEffect } from 'react'
+import { Col, Row, Container, Spinner } from 'react-bootstrap'
 import './About.css'
 import photo from './photo.JPG'
 
 
 const About = () => {
+
+    const [reveal, setReveal] = useState({ right: 'reveal fadeInRight', left: 'reveal fadeInLeft', down: 'reveal fadeInDown' })
+
+    useLayoutEffect(() => {
+        window.scrollTo(0, 0)
+        setTimeout(() => {
+            setReveal({
+                right: 'reveal fadeInRight visible', left: 'reveal fadeInLeft visible', down: 'reveal fadeInDown visible'
+            })
+        }, 500);
+    }, [])
+
     return (
         <>
+
             <section className='about'>
                 <Container>
-                    <h2 className='ab-title'>About</h2>
+                    {reveal.down === 'reveal fadeInDown visible' ? <h2 className={reveal.down}>About</h2> : <Spinner className="loader" animation="grow" variant="warning" />
+                    }
 
                     <Row>
 
                         <Col md={{ span: 7, offset: 1 }}>
-                            <p>Mi name is Carlos Prado.</p>
-                            <p>Born and raised in Getxo, Spain. As a kid, I always loved to disassemble and then reconstruct everything I came across, and find the logic behind, that's why, when I turned 18, I decided to study Engineering.</p>
-                            <p>After graduating, I spent my first professional years working between Europe and South America in various industries and roles. In 2019, I decided to step out of my comfort zone, pack my bags and move to the other end of the world, Australia, where I lived for 1 year and a half.</p>
-                            <p>Now, I am a front-end developer with full stack knowlege, always looking for the right balance between functionality and a visual impact.</p>
+                            <div className={reveal.left}>
+                                <p >My name is Carlos Prado.</p>
+                                <p >Born and raised in Getxo, Spain. As a kid, I always loved to disassemble and then reconstruct everything I came across, and find the logic behind, that's why, when I turned 18, I decided to study Engineering.</p>
+                                <p >After graduating, I spent my first professional years working between Europe and South America in various industries and roles. In 2019, I decided to step out of my comfort zone, pack my bags and move to the other end of the world, Australia, where I lived for 1 year and a half.</p>
+                                <p >Now, I am a front-end developer with full stack knowledge, always looking for the right balance between functionality and a visual impact.</p>
+                            </div>
                         </Col>
                         <Col md={3}>
-                            <img style={{ width: '100%', marginBottom: 20 }} src={photo} alt='Carlos Prado' />
+                            <img className={reveal.right} style={{ width: '100%', marginBottom: 20 }} src={photo} alt='Carlos Prado' />
                         </Col>
 
                     </Row>

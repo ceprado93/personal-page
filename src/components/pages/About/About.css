@@ -6,7 +6,7 @@
     margin-bottom: 80px;
 }
 
-.ab-title{ 
+.reveal.fadeInDown{ 
     display: flex;
     justify-content: center;
     color:black;
@@ -16,6 +16,21 @@
     letter-spacing: .15em;
     text-transform: uppercase;
     margin-bottom: 40px;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateY(-120px);
+}
+
+.reveal.fadeInDown.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.loader{
+    display: block;
+    margin: 0 auto;
+    margin-top: 200px;
 }
 
 .about {
@@ -24,17 +39,27 @@
     height: 700px;
     background-size: cover;
     background-position: 100% 30%;
-    margin-bottom: 100px;
+    margin-bottom: 60px;
 }
 
-.about p{
+.reveal.fadeInLeft{
     
     font-size: 1em;
     width: 100%;
     color:black;
     letter-spacing: .1em;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateX(-100px);
 }
-.about img{
+
+.reveal.fadeInLeft.visible {
+    transform: translateX(0);
+    opacity: 1;
+}
+
+.reveal.fadeInRight{
     border-radius: 50%;
     border: 2px solid black;
     width: 100%;
@@ -42,10 +67,19 @@
     margin-top: 15%;
     object-fit: cover;
     object-position: 100% 57%;
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+    transform: translateX(70px);
+}
+
+.reveal.fadeInRight.visible {
+    transform: translateX(0);
+    opacity: 1;
 }
 
 .skills{
-    margin-top: 150px;
+    margin-top: 50px;
     width: 100%;
     background-size: cover;
     background-position: 100% 30%;
