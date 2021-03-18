@@ -1,0 +1,32 @@
+footer {
+    background-color:whitesmoke;
+    color: black;
+    text-align: center;
+    padding: 3px;
+    position: fixed;
+    width: 100%;
+    font-size: .7em;
+    bottom: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 50px;
+    border-top: 5px solid rgba(255,196,0,255);
+}
+
+footer img{
+    height: 30px;
+}
+
+footer p{
+    margin-bottom: 0px;
+}
+
+footer h2{
+    margin-bottom: 0px;
+}
+
+.social{
+    display: flex;
+    justify-content: space-between;
+}

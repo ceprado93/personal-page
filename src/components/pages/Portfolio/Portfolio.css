@@ -1,0 +1,43 @@
+.port-title{ 
+    display: flex;
+    justify-content: center;
+    color:black;
+    padding-top: 120px;
+    padding-bottom: 60px;
+    font-size: 4em;
+    letter-spacing: .15em;
+    text-transform: uppercase;
+}
+
+.portfolio {
+    padding-top: 50px;
+    width: 100%;
+    background-size: cover;
+    background-position: 100% 30%;
+    margin-bottom: 150px;
+}
+
+.portfolio h3{
+   color: black;
+   display: flex;
+   justify-content: center;
+   letter-spacing: .15em;
+}
+
+.portfolio p {
+   color: black;
+   display: flex;
+   justify-content: center;
+}
+
+.sec-proj{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.portfolio hr{
+    margin-top: 80px;
+}
