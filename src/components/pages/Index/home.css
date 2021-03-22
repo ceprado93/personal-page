@@ -2,30 +2,52 @@
     margin-top: 0;
     width: 100%;
     height: 800px;
-    background-image: url('http://www.bizkaiadesdeelaire.com/38-thickbox_leo_camera/foto-aerea-mar-costa-sopela-barrika-plentzia.jpg');
     background-size: cover;
-    background-position: 100% 30%;
+    background-position: 100% 0%;
     
 }
+
+.first-box{
+    margin-top: 150px;
+    border: 5px solid rgba(255,196,0,255);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+.second-box{
+    margin: 5%;
+    border: 5px solid rgba(255,196,0,255);
+    opacity: 0;
+    transition-property: all;
+    transition-duration: 1s;
+}
+
+.visible {
+    transform: translateY(0);
+    opacity: 1;
+}
+
 .revealMain.fadeInDown{
-    padding-top: 300px;
+    padding: 2% 5%;
     display: flex;
     justify-content: center;
     text-align: center;
     font-weight: 500;
-    font-size: 3em;
-    letter-spacing: .2em;
-    color:white;
+    font-size: 2em;
+    letter-spacing: .15em;
+    color:rgb(36, 36, 36);
     opacity: 0;
     transition-property: all;
     transition-duration: 1s;
     transform: translateY(-100px);
+     transform-style: preserve-3d;
 }
 
 .revealMain.fadeInDown.visible {
     transform: translateY(0);
     opacity: 1;
 }
+
 .first-section p{
     display: flex;
     justify-content: left;
@@ -36,24 +58,27 @@
     color:white;
     letter-spacing: .1em;
 }
-.btnGroup{
-    margin-top: 40px;
+
+.first-section h1{
+    margin-top: 360px;
+}
+
+.btn{
+    margin: 20px auto 0 auto;
     display: flex;
     justify-content: center;
+    background-color: rgba(0,179,137,255);
+    border: 1px solid;
+    width: 50%;
 }
-.searchBtn{
-    padding: 5px 50px;
-    margin-bottom: 100px;
-    margin-top: 20px;
-    letter-spacing: .1em;
-}
-.carouselBtn{
-    margin-bottom: 300px;
-    letter-spacing: .2em;
-    padding: 5px 50px;
-}
-.wave-link{
-    margin: 0 auto;
+
+.outline-btn{
+    margin: 10px auto;
     display: flex;
     justify-content: center;
+    background-color: transparent;
+    border: 1px solid rgba(0,179,137,255);
+    color: rgba(0,179,137,255);
 }
+
+

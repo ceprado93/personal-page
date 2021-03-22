@@ -3,7 +3,6 @@ footer {
     color: black;
     text-align: center;
     padding: 3px;
-    position: fixed;
     width: 100%;
     font-size: .7em;
     bottom: 0;
@@ -11,7 +10,7 @@ footer {
     justify-content: space-around;
     align-items: center;
     height: 50px;
-    border-top: 5px solid rgba(255,196,0,255);
+    border-top: 5px solid rgba(0,179,137,255);
 }
 
 footer img{

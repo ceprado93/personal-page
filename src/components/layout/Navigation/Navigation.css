@@ -5,15 +5,17 @@
     width: 100%;
     color: antiquewhite;
     top: 0;
-    background-color: transparent;
+    background-color: white;
     transition: all .1s;
-    border-bottom: 1px border rgb(29, 146, 29);
+    border-bottom: 5px solid rgba(0,179,137,255);
+
 } 
 
 .navb.filled {
     background-color: white;
+    height: 40px;
     color:rgb(37, 36, 36);
-    border-bottom: 5px solid rgba(255,196,0,255);
+    border-bottom: 5px solid rgba(0,179,137,255);
 
 }
 #navbar span.link-color{

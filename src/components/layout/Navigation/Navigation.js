@@ -12,8 +12,8 @@ const Navigation = ({ handleAlert }) => {
 
     function scrollNav(e) {
         const scrollTop = window.pageYOffset
-        if (scrollTop > 1) setChangeClass(true)
-        else if (scrollTop === 0) setChangeClass(false)
+        if (scrollTop > 120) setChangeClass(true)
+        else if (scrollTop < 120) setChangeClass(false)
     }
 
 
@@ -23,8 +23,8 @@ const Navigation = ({ handleAlert }) => {
                 <Navbar.Brand> <img
                     alt=""
                     src={logo}
-                    width="70"
-                    height="70"
+                    width="40"
+                    height="40"
                     className="d-inline-block align-top"
                 />{' '}</Navbar.Brand>
             </Link>

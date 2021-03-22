@@ -1,17 +1,20 @@
 import { useState, useLayoutEffect } from 'react'
 
-import { Container, Button, ButtonGroup, Row, Col } from 'react-bootstrap'
+import { Container, Button, Row, Col } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import './home.css'
 
 const IndexPage = () => {
 
-    const [revealMain, setRevealMain] = useState({ down: 'revealMain fadeInDown' })
+    const [revealMain, setRevealMain] = useState({ down: 'revealMain fadeInDown', appear: 'first-box', appearTwo: 'second-box' })
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
         setTimeout(() => {
             setRevealMain({
-                down: 'revealMain fadeInDown visible'
+                down: 'revealMain fadeInDown visible',
+                appearOne: 'first-box visible',
+                appearTwo: 'second-box visible'
             })
         }, 500);
     }, [])
@@ -31,18 +34,38 @@ const IndexPage = () => {
 
     return (
         <>
-            <section className='first-section'>
-                <Container as="section">
-                    <h1 className={revealMain.down}>Full stack web developer based in Madrid, Spain</h1>
-                    <hr></hr>
-                    {/* <ButtonGroup size="mb" className='btnGroup'>
-                        <Button variant="success" onClick={() => scrollDown(800)}> About</Button>
-                        <Button variant="outline-success" onClick={() => scrollDown(1550)}>Skills</Button>
-                        <Button className="btn btn-success" onClick={() => scrollDown(2350)}> Portfolio</Button>
-                        <Button variant="outline-success" onClick={() => scrollDown(3050)}>Contact</Button>
-                    </ButtonGroup> */}
+            <section className='first-section' style={{ backgroundImage: `url(https://images.pexels.com/photos/238118/pexels-photo-238118.jpeg?auto=compress&cs=tinysrgb&dpr=3&h=750&w=1260)` }}>
+                <Container as="section" >
+                    <Row>
+                        <Col md={7}>
+                            <h1 className={revealMain.down}>Carlos Prado</h1>
+                            <h2 className={revealMain.down}>Front-end web developer based in Madrid, Spain</h2>
+                            <div>
+                                <Link to="/about" ><Button className="btn">About & Skills</Button></Link>
+                                <Link to="/portfolio" ><Button className="outline-btn">Portfolio</Button></Link>
+                            </div>
+                        </Col>
+                    </Row>
+
+
                 </Container>
             </section>
+            {/* <section className='first-section'>
+                <Container as="section">
+                    <div className={revealMain.appearOne}>
+                        <div className={revealMain.appearTwo}>
+                            <h1 className={revealMain.down}>Carlos Prado</h1>
+                            <h2 className={revealMain.down}>Full stack web developer based in Madrid, Spain</h2>
+                            <div className="btn">
+                                <Link to="/about" ><Button variant="warning">About & Skills</Button></Link>
+                                <Link to="/portfolio" ><Button variant="warning">Portfolio</Button></Link>
+                            </div>
+
+                        </div>
+                    </div>
+
+                </Container>
+            </section> */}
         </>
     )
 }
