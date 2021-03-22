@@ -1,18 +1,20 @@
 {
   "files": {
-    "main.css": "/personal-page/static/css/main.cbd0fab3.chunk.css",
-    "main.js": "/personal-page/static/js/main.d94e4c0c.chunk.js",
-    "main.js.map": "/personal-page/static/js/main.d94e4c0c.chunk.js.map",
+    "main.css": "/personal-page/static/css/main.5dd21e32.chunk.css",
+    "main.js": "/personal-page/static/js/main.eb178ae1.chunk.js",
+    "main.js.map": "/personal-page/static/js/main.eb178ae1.chunk.js.map",
     "runtime-main.js": "/personal-page/static/js/runtime-main.27b423c5.js",
     "runtime-main.js.map": "/personal-page/static/js/runtime-main.27b423c5.js.map",
     "static/css/2.150d169a.chunk.css": "/personal-page/static/css/2.150d169a.chunk.css",
-    "static/js/2.2efa8df9.chunk.js": "/personal-page/static/js/2.2efa8df9.chunk.js",
-    "static/js/2.2efa8df9.chunk.js.map": "/personal-page/static/js/2.2efa8df9.chunk.js.map",
+    "static/js/2.08adf145.chunk.js": "/personal-page/static/js/2.08adf145.chunk.js",
+    "static/js/2.08adf145.chunk.js.map": "/personal-page/static/js/2.08adf145.chunk.js.map",
     "index.html": "/personal-page/index.html",
     "static/css/2.150d169a.chunk.css.map": "/personal-page/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.cbd0fab3.chunk.css.map": "/personal-page/static/css/main.cbd0fab3.chunk.css.map",
-    "static/js/2.2efa8df9.chunk.js.LICENSE.txt": "/personal-page/static/js/2.2efa8df9.chunk.js.LICENSE.txt",
+    "static/css/main.5dd21e32.chunk.css.map": "/personal-page/static/css/main.5dd21e32.chunk.css.map",
+    "static/js/2.08adf145.chunk.js.LICENSE.txt": "/personal-page/static/js/2.08adf145.chunk.js.LICENSE.txt",
+    "static/media/desktop.3622ae2d.png": "/personal-page/static/media/desktop.3622ae2d.png",
     "static/media/logo.4f5f52c6.png": "/personal-page/static/media/logo.4f5f52c6.png",
+    "static/media/logo.9fabc46b.png": "/personal-page/static/media/logo.9fabc46b.png",
     "static/media/photo.284d8085.JPG": "/personal-page/static/media/photo.284d8085.JPG",
     "static/media/wm-clusters.d1682804.png": "/personal-page/static/media/wm-clusters.d1682804.png",
     "static/media/wm-home.4cb0e7c6.png": "/personal-page/static/media/wm-home.4cb0e7c6.png",
@@ -23,8 +25,8 @@
   "entrypoints": [
     "static/js/runtime-main.27b423c5.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.2efa8df9.chunk.js",
-    "static/css/main.cbd0fab3.chunk.css",
-    "static/js/main.d94e4c0c.chunk.js"
+    "static/js/2.08adf145.chunk.js",
+    "static/css/main.5dd21e32.chunk.css",
+    "static/js/main.eb178ae1.chunk.js"
   ]
 }
