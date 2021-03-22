@@ -10,7 +10,7 @@ const Routes = () => {
 
     return (
         <Switch>
-            <Route path="/" exact render={() => <IndexPage />} />
+            <Route path="/personal-page" exact render={() => <IndexPage />} />
             <Route path="/about" exact render={() => <About />} />
             <Route path="/skills" exact render={() => <Skills />} />
             <Route path="/portfolio" exact render={() => <Portfolio />} />
