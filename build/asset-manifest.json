@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/personal-page/static/css/main.9b036a0e.chunk.css",
-    "main.js": "/personal-page/static/js/main.a0b1859d.chunk.js",
-    "main.js.map": "/personal-page/static/js/main.a0b1859d.chunk.js.map",
+    "main.js": "/personal-page/static/js/main.b521aa6c.chunk.js",
+    "main.js.map": "/personal-page/static/js/main.b521aa6c.chunk.js.map",
     "runtime-main.js": "/personal-page/static/js/runtime-main.27b423c5.js",
     "runtime-main.js.map": "/personal-page/static/js/runtime-main.27b423c5.js.map",
     "static/css/2.150d169a.chunk.css": "/personal-page/static/css/2.150d169a.chunk.css",
@@ -16,8 +16,8 @@
     "static/media/phones-details.ee8b9aae.png": "/personal-page/static/media/phones-details.ee8b9aae.png",
     "static/media/phones-home.7a95cc02.png": "/personal-page/static/media/phones-home.7a95cc02.png",
     "static/media/photo.284d8085.JPG": "/personal-page/static/media/photo.284d8085.JPG",
+    "static/media/wavemaps.a770ff35.gif": "/personal-page/static/media/wavemaps.a770ff35.gif",
     "static/media/wm-clusters.d1682804.png": "/personal-page/static/media/wm-clusters.d1682804.png",
-    "static/media/wm-home.4cb0e7c6.png": "/personal-page/static/media/wm-home.4cb0e7c6.png",
     "static/media/wm-login.9f0827c2.png": "/personal-page/static/media/wm-login.9f0827c2.png",
     "static/media/wm-profile.75f35dde.png": "/personal-page/static/media/wm-profile.75f35dde.png",
     "static/media/wm-wave.52793c05.png": "/personal-page/static/media/wm-wave.52793c05.png"
@@ -27,6 +27,6 @@
     "static/css/2.150d169a.chunk.css",
     "static/js/2.5668ebb3.chunk.js",
     "static/css/main.9b036a0e.chunk.css",
-    "static/js/main.a0b1859d.chunk.js"
+    "static/js/main.b521aa6c.chunk.js"
   ]
 }

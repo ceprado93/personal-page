@@ -1,13 +1,14 @@
 import { useState, useLayoutEffect } from 'react'
 import { Container, Carousel, Row, Col, Spinner, Accordion, Card } from 'react-bootstrap'
 import './Portfolio.css'
-import wvHome from './wm-home.png'
 import wvLogin from './wm-login.png'
 import wvProfile from './wm-profile.png'
 import wvClusters from './wm-clusters.png'
 import wvWave from './wm-wave.png'
 import phHome from './phones-home.png'
 import phDetails from './phones-details.png'
+import wmGif from '../Index/wavemaps.gif'
+
 
 const Portfolio = () => {
     const [reveal, setReveal] = useState({ right: 'reveal fadeInRight', left: 'reveal fadeInLeft', down: 'reveal fadeInDown' })
@@ -38,7 +39,7 @@ const Portfolio = () => {
                                                 <Carousel.Item>
                                                     <img
                                                         className="d-block w-100"
-                                                        src={wvHome}
+                                                        src={wmGif}
                                                         alt="First slide"
                                                     />
 

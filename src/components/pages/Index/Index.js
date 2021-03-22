@@ -3,9 +3,9 @@ import { useState, useLayoutEffect } from 'react'
 import { Container, Button, Row, Col, Carousel } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './home.css'
-import wvHome from '../Portfolio/wm-home.png'
 import wvClusters from '../Portfolio/wm-clusters.png'
 import phHome from '../Portfolio/phones-home.png'
+import wmGif from './wavemaps.gif'
 
 
 const IndexPage = () => {
@@ -51,7 +51,7 @@ const IndexPage = () => {
                         <Carousel.Item>
                             <img
                                 className="d-block w-100"
-                                src={wvHome}
+                                src={wmGif}
                                 alt="First slide"
                             />
 
