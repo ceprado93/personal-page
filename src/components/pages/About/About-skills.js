@@ -22,7 +22,7 @@ const About = () => {
 
             <section className='about'>
                 <Container>
-                    {reveal.down === 'reveal fadeInDown visible' ? <h2 className={reveal.down}>About</h2> : <Spinner className="loader" animation="grow" variant="warning" />
+                    {reveal.down === 'reveal fadeInDown visible' ? <h2 className={reveal.down}>About</h2> : <Spinner className="loader" animation="grow" variant="success" />
                     }
 
                     <Row>

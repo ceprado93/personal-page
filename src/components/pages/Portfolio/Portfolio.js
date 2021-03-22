@@ -23,7 +23,7 @@ const Portfolio = () => {
 
             <section className='portfolio'>
                 <Container>
-                    {reveal.down === 'reveal fadeInDown visible' ? <h2 className={reveal.down}>Portfolio</h2> : <Spinner className="loader" animation="grow" variant="warning" />}
+                    {reveal.down === 'reveal fadeInDown visible' ? <h2 className={reveal.down}>Portfolio</h2> : <Spinner className="loader" animation="grow" variant="success" />}
                     <Row>
                         <Col className={reveal.left}>
                             <hr></hr>
