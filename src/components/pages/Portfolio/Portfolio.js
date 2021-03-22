@@ -1,11 +1,13 @@
 import { useState, useLayoutEffect } from 'react'
 import { Container, Carousel, Row, Col, Spinner, Accordion, Card } from 'react-bootstrap'
 import './Portfolio.css'
-import home from './wm-home.png'
-import login from './wm-login.png'
-import profile from './wm-profile.png'
-import clusters from './wm-clusters.png'
-import wave from './wm-wave.png'
+import wvHome from './wm-home.png'
+import wvLogin from './wm-login.png'
+import wvProfile from './wm-profile.png'
+import wvClusters from './wm-clusters.png'
+import wvWave from './wm-wave.png'
+import phHome from './phones-home.png'
+import phDetails from './phones-details.png'
 
 const Portfolio = () => {
     const [reveal, setReveal] = useState({ right: 'reveal fadeInRight', left: 'reveal fadeInLeft', down: 'reveal fadeInDown' })
@@ -27,7 +29,7 @@ const Portfolio = () => {
                     <Row>
                         <Col className={reveal.left}>
                             <hr></hr>
-                            <Accordion>
+                            <Accordion style={{ marginBottom: 50 }}>
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="0"><h3> Wave Maps</h3></Accordion.Toggle>
                                     <Accordion.Collapse eventKey="0">
@@ -36,7 +38,7 @@ const Portfolio = () => {
                                                 <Carousel.Item>
                                                     <img
                                                         className="d-block w-100"
-                                                        src={home}
+                                                        src={wvHome}
                                                         alt="First slide"
                                                     />
 
@@ -44,28 +46,28 @@ const Portfolio = () => {
                                                 <Carousel.Item >
                                                     <img
                                                         className="d-block w-100"
-                                                        src={clusters}
+                                                        src={wvClusters}
                                                         alt="Second slide"
                                                     />
                                                 </Carousel.Item>
                                                 <Carousel.Item>
                                                     <img
                                                         className="d-block w-100"
-                                                        src={wave}
+                                                        src={wvWave}
                                                         alt="Third slide"
                                                     />
                                                 </Carousel.Item>
                                                 <Carousel.Item>
                                                     <img
                                                         className="d-block w-100"
-                                                        src={login}
+                                                        src={wvLogin}
                                                         alt="Third slide"
                                                     />
                                                 </Carousel.Item>
                                                 <Carousel.Item>
                                                     <img
                                                         className="d-block w-100"
-                                                        src={profile}
+                                                        src={wvProfile}
                                                         alt="Third slide"
                                                     />
 
@@ -79,6 +81,32 @@ const Portfolio = () => {
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="1"> <h3>Food Game</h3></Accordion.Toggle>
                                     <Accordion.Collapse eventKey="1">
                                         <Card.Body>Hello! I'm another body</Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
+                                <Card>
+                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="2"><h3> The phone Cave</h3></Accordion.Toggle>
+                                    <Accordion.Collapse eventKey="2">
+                                        <Card.Body><p>React app connected to a REST API. API created with NodeJS</p>
+                                            <Carousel>
+                                                <Carousel.Item>
+                                                    <img
+                                                        className="d-block w-100"
+                                                        src={phHome}
+                                                        alt="First slide"
+                                                    />
+
+                                                </Carousel.Item>
+                                                <Carousel.Item >
+                                                    <img
+                                                        className="d-block w-100"
+                                                        src={phDetails}
+                                                        alt="Second slide"
+                                                    />
+                                                </Carousel.Item>
+
+                                            </Carousel>
+                                            <hr></hr>
+                                        </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                             </Accordion>

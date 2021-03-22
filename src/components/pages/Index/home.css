@@ -3,7 +3,6 @@
     width: 100%;
     background-size: cover;
     background-position: 100% 0%;
-    
 }
 
 .revealMain.fadeInDown{
@@ -39,7 +38,7 @@
 }
 
 .first-section h1{
-    margin-top: 360px;
+    margin-top: 460px;
 }
 
 .btn{
@@ -52,7 +51,7 @@
 }
 
 .outline-btn{
-    margin: 10px auto;
+    margin: 10px auto 20px auto;
     display: flex;
     justify-content: center;
     background-color: transparent;
@@ -63,6 +62,6 @@
 
 @media (max-width: 460px) {
   .first-section h1 {
-    margin-top: 500px;
+    margin-top: 560px;
   }
 }

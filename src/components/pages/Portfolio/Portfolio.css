@@ -54,14 +54,6 @@
    justify-content: center;
 }
 
-.sec-proj{
-    margin-top: 50px;
-    margin-bottom: 50px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
 .portfolio hr{
     margin-top: 80px;
 }

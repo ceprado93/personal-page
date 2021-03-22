@@ -29,7 +29,7 @@ const IndexPage = () => {
                         <Col md={7}>
                             <h1 className={revealMain.down}>Carlos Prado</h1>
                             <h2 className={revealMain.down}>Front-end web developer based in Madrid, Spain</h2>
-                            <div>
+                            <div style={{ marginBottom: 100 }}>
                                 <Link to="/about" ><Button className="btn">About & Skills</Button></Link>
                                 <Link to="/portfolio" ><Button className="outline-btn">Portfolio</Button></Link>
                             </div>
