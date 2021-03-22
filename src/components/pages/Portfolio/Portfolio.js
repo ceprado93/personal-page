@@ -1,5 +1,5 @@
 import { useState, useLayoutEffect } from 'react'
-import { Container, Carousel, Row, Col, Spinner, Accordion, Card, Button } from 'react-bootstrap'
+import { Container, Carousel, Row, Col, Spinner, Accordion, Card } from 'react-bootstrap'
 import './Portfolio.css'
 import home from './wm-home.png'
 import login from './wm-login.png'

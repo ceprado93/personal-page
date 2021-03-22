@@ -1,30 +1,9 @@
 .first-section{
     margin-top: 0;
     width: 100%;
-    height: 800px;
     background-size: cover;
     background-position: 100% 0%;
     
-}
-
-.first-box{
-    margin-top: 150px;
-    border: 5px solid rgba(255,196,0,255);
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 1s;
-}
-.second-box{
-    margin: 5%;
-    border: 5px solid rgba(255,196,0,255);
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 1s;
-}
-
-.visible {
-    transform: translateY(0);
-    opacity: 1;
 }
 
 .revealMain.fadeInDown{
@@ -82,3 +61,8 @@
 }
 
 
+@media (max-width: 460px) {
+  .first-section h1 {
+    margin-top: 500px;
+  }
+}
