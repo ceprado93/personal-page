@@ -1,8 +1,12 @@
 import { useState, useLayoutEffect } from 'react'
 
-import { Container, Button, Row, Col } from 'react-bootstrap'
+import { Container, Button, Row, Col, Carousel } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './home.css'
+import wvHome from '../Portfolio/wm-home.png'
+import wvClusters from '../Portfolio/wm-clusters.png'
+import phHome from '../Portfolio/phones-home.png'
+
 
 const IndexPage = () => {
 
@@ -36,8 +40,38 @@ const IndexPage = () => {
                         </Col>
                     </Row>
 
-
                 </Container>
+            </section>
+            <section>
+                <div className="bottom-carousel">
+                    <h2>Projects</h2>
+                    <Link to="/portfolio"><Button className="btn" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
+
+                    <Carousel>
+                        <Carousel.Item>
+                            <img
+                                className="d-block w-100"
+                                src={wvHome}
+                                alt="First slide"
+                            />
+
+                        </Carousel.Item>
+                        <Carousel.Item >
+                            <img
+                                className="d-block w-100"
+                                src={wvClusters}
+                                alt="Second slide"
+                            />
+                        </Carousel.Item>
+                        <Carousel.Item >
+                            <img
+                                className="d-block w-100"
+                                src={phHome}
+                                alt="Second slide"
+                            />
+                        </Carousel.Item>
+                    </Carousel>
+                </div>
             </section>
 
         </>
