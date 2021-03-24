@@ -1,29 +1,21 @@
 import { useState, useLayoutEffect } from 'react'
 
-import { Container, Button, Row, Col, Carousel } from 'react-bootstrap'
+import { Container, Button, Row, Col, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './home.css'
-import wvClusters from '../Portfolio/wm-clusters.png'
 import phHome from '../Portfolio/phones-home.png'
 import wmGif from './wavemaps.gif'
-
+import Typewriter from 'typewriter-effect';
+import fgHome from './fg-home.png'
 
 const IndexPage = () => {
 
-    const [revealMain, setRevealMain] = useState({ down: 'revealMain fadeInDown', appear: 'first-box', appearTwo: 'second-box' })
+    const [ready, setReady] = useState(false)
 
     useLayoutEffect(() => {
         window.scrollTo(0, 0)
-        setTimeout(() => {
-            setRevealMain({
-                down: 'revealMain fadeInDown visible',
-                appearOne: 'first-box visible',
-                appearTwo: 'second-box visible'
-            })
-        }, 500);
+
     }, [])
-
-
 
     return (
         <>
@@ -31,8 +23,25 @@ const IndexPage = () => {
                 <Container as="section" >
                     <Row>
                         <Col md={7}>
-                            <h1 className={revealMain.down}>Carlos Prado</h1>
-                            <h2 className={revealMain.down}>Front-end web developer based in Madrid, Spain</h2>
+                            <div>
+                                <hr className="first-item"></hr>
+                                <Typewriter
+                                    onInit={(typewriter) => {
+                                        typewriter.typeString(`<h1>Carlos Prado<h1>`).start()
+                                            .callFunction(() => {
+                                                setReady(true)
+                                            })
+                                    }}
+                                />
+                                {ready && <Typewriter
+                                    options={{
+                                        strings: '<h2>Front-end web developer based in Madrid, Spain<h2>',
+                                        autoStart: true,
+                                        cursorClassName: 'Typewriter__cursor'
+                                    }}
+                                />}
+
+                            </div>
                             <div style={{ marginBottom: 100 }}>
                                 <Link to="/about" ><Button className="btn">About & Skills</Button></Link>
                                 <Link to="/portfolio" ><Button className="outline-btn">Portfolio</Button></Link>
@@ -44,33 +53,42 @@ const IndexPage = () => {
             </section>
             <section>
                 <div className="bottom-carousel">
-                    <h2>Projects</h2>
-                    <Link to="/portfolio"><Button className="btn" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
+                    <Container>
+                        <h1 style={{ margin: '80px 0' }}>Projects</h1>
+                        <Row>
+                            <Col md={4} className="project-card">
+                                <Card >
+                                    <Card.Img variant="top" src={wmGif} />
+                                    <Card.Body>
+                                        <h3>Wavemaps</h3>
+                                        <Link to="/portfolio"><Button className="btn-card" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
 
-                    <Carousel>
-                        <Carousel.Item>
-                            <img
-                                className="d-block w-100"
-                                src={wmGif}
-                                alt="First slide"
-                            />
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col md={4} className="project-card">
+                                <Card>
+                                    <Card.Img variant="top" src={phHome} />
+                                    <Card.Body>
+                                        <h3>The phone Cave</h3>
+                                        <Link to="/portfolio"><Button className="btn-card" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
 
-                        </Carousel.Item>
-                        <Carousel.Item >
-                            <img
-                                className="d-block w-100"
-                                src={wvClusters}
-                                alt="Second slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item >
-                            <img
-                                className="d-block w-100"
-                                src={phHome}
-                                alt="Second slide"
-                            />
-                        </Carousel.Item>
-                    </Carousel>
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+                            <Col md={4} className="project-card">
+                                <Card>
+                                    <Card.Img variant="top" src={fgHome} />
+                                    <Card.Body>
+                                        <h3>The food Game</h3>
+                                        <Link to="/portfolio"><Button className="btn-card" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
+
+                                    </Card.Body>
+                                </Card>
+                            </Col>
+
+                        </Row>
+                    </Container>
                 </div>
             </section>
 

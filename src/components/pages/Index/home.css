@@ -14,31 +14,24 @@
     font-size: 2em;
     letter-spacing: .15em;
     color:rgb(36, 36, 36);
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 1s;
-    transform: translateY(-100px);
-     transform-style: preserve-3d;
+    
 }
-
-.revealMain.fadeInDown.visible {
-    transform: translateY(0);
-    opacity: 1;
-}
-
-.first-section p{
+/* 
+.first-section h1,h2{
     display: flex;
-    justify-content: left;
-    font-weight: 500;
-    font-size: 1em;
-    margin: 10px auto;
-    width: 45%;
-    color:white;
-    letter-spacing: .1em;
+    justify-content: center;
+    text-align: center;
+} */
+
+
+.first-item{
+    margin-top: 440px;
+    color: transparent;
+    width: 0;
 }
 
-.first-section h1{
-    margin-top: 460px;
+.Typewriter__cursor{
+    display: none;
 }
 
 .first-section a{
@@ -46,9 +39,19 @@
 }
 
 .btn{
-    margin: 20px auto 0 auto;
+    margin: 40px auto 0 auto;
     display: flex;
     justify-content: center;
+    align-content: flex-start;
+    background-color: rgba(0,179,137,255);
+    border: 1px solid;
+    width: 50%;
+}
+.btn-card{
+    margin: 10px auto 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
     background-color: rgba(0,179,137,255);
     border: 1px solid;
     width: 50%;
@@ -69,6 +72,19 @@
     color: rgba(0,179,137,255);
 }
 
+.project-card{
+    margin-bottom: 40px;
+}
+
+.project-card h3{
+    margin-bottom: 10px;
+}
+
+.project-card img {
+    height: 250px;
+    object-fit: cover;
+}
+
 .outline-btn:hover{
     background-color: rgba(0,179,137,255);
     border: 1px solid rgba(0,179,137,255);
@@ -77,7 +93,7 @@
 
 .bottom-carousel{
     width: 80%;
-    margin: 160px auto;
+    margin: 0px auto 160px auto;
     text-align: center;
 }
 
@@ -86,7 +102,7 @@
 }
 
 @media (max-width: 460px) {
-  .first-section h1 {
+  .first-item {
     margin-top: 560px;
   }
 }

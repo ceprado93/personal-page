@@ -8,6 +8,10 @@ import wvWave from './wm-wave.png'
 import phHome from './phones-home.png'
 import phDetails from './phones-details.png'
 import wmGif from '../Index/wavemaps.gif'
+import fgHome from '../Index/fg-home.png'
+import fgGame from './fgGame.png'
+
+
 
 
 const Portfolio = () => {
@@ -81,7 +85,27 @@ const Portfolio = () => {
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="1"> <h3>Food Game</h3></Accordion.Toggle>
                                     <Accordion.Collapse eventKey="1">
-                                        <Card.Body>Hello! I'm another body</Card.Body>
+                                        <Card.Body><p>JS canvas game</p>
+                                            <Carousel>
+                                                <Carousel.Item>
+                                                    <img
+                                                        className="d-block w-100"
+                                                        src={fgHome}
+                                                        alt="First slide"
+                                                    />
+
+                                                </Carousel.Item>
+                                                <Carousel.Item >
+                                                    <img
+                                                        className="d-block w-100"
+                                                        src={fgGame}
+                                                        alt="Second slide"
+                                                    />
+                                                </Carousel.Item>
+
+                                            </Carousel>
+                                            <hr></hr>
+                                        </Card.Body>
                                     </Accordion.Collapse>
                                 </Card>
                                 <Card>
