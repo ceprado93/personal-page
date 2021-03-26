@@ -7,6 +7,8 @@ import phHome from '../Portfolio/phones-home.png'
 import wmGif from './wavemaps.gif'
 import Typewriter from 'typewriter-effect';
 import fgHome from './fg-home.png'
+import apsHome from './apsRacing.png'
+
 
 const IndexPage = () => {
 
@@ -58,19 +60,19 @@ const IndexPage = () => {
                         <Row>
                             <Col md={4} className="project-card">
                                 <Card >
-                                    <Card.Img variant="top" src={wmGif} />
+                                    <Card.Img variant="top" src={apsHome} />
                                     <Card.Body>
-                                        <h3>Wavemaps</h3>
+                                        <h3>APS Racing</h3>
                                         <Link to="/portfolio"><Button className="btn-card" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
 
                                     </Card.Body>
                                 </Card>
                             </Col>
                             <Col md={4} className="project-card">
-                                <Card>
-                                    <Card.Img variant="top" src={phHome} />
+                                <Card >
+                                    <Card.Img variant="top" src={wmGif} />
                                     <Card.Body>
-                                        <h3>The phone Cave</h3>
+                                        <h3>Wavemaps</h3>
                                         <Link to="/portfolio"><Button className="btn-card" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
 
                                     </Card.Body>

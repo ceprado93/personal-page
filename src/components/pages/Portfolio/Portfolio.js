@@ -10,6 +10,10 @@ import phDetails from './phones-details.png'
 import wmGif from '../Index/wavemaps.gif'
 import fgHome from '../Index/fg-home.png'
 import fgGame from './fgGame.png'
+import apsRacing from './apsRacing.mp4'
+import apsHome from '../Index/apsRacing.png'
+
+
 
 
 
@@ -35,6 +39,21 @@ const Portfolio = () => {
                         <Col className={reveal.left}>
                             <hr></hr>
                             <Accordion style={{ marginBottom: 50 }}>
+                                <Card>
+                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="3"> <h3>APS Racing</h3></Accordion.Toggle>
+                                    <Accordion.Collapse eventKey="3">
+                                        <Card.Body><p>React app created for APS Racing, a motorSport media channel . Server created with NodeJS</p>
+                                            <Carousel>
+                                                <Carousel.Item>
+                                                    <video autoPlay="true" loop="true" data-reactid=".0.1.0.0">
+                                                        <source type="video/mp4" data-reactid=".0.1.0.0.0" src={apsRacing} />
+                                                    </video>
+                                                </Carousel.Item>
+                                            </Carousel>
+                                            <hr></hr>
+                                        </Card.Body>
+                                    </Accordion.Collapse>
+                                </Card>
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="0"><h3> Wave Maps</h3></Accordion.Toggle>
                                     <Accordion.Collapse eventKey="0">
