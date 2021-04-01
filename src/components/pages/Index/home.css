@@ -93,7 +93,7 @@
 
 .bottom-carousel{
     width: 80%;
-    margin: 0px auto 160px auto;
+    margin: 0px auto 100px auto;
     text-align: center;
 }
 
@@ -102,7 +102,12 @@
 }
 
 @media (max-width: 460px) {
+
+.first-section{
+    background-position: 50% 0%;
+}
+
   .first-item {
-    margin-top: 560px;
+    margin-top: 200px;
   }
 }

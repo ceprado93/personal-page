@@ -47,6 +47,7 @@
     width: 100%;
     color:black;
     letter-spacing: .1em;
+    text-align: justify;
     opacity: 0;
     transition-property: all;
     transition-duration: 1s;

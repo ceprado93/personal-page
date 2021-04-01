@@ -37,7 +37,7 @@ const Portfolio = () => {
                     {reveal.down === 'reveal fadeInDown visible' ? <h2 className={reveal.down}>Portfolio</h2> : <Spinner className="loader" animation="grow" variant="success" />}
                     <Row>
                         <Col className={reveal.left}>
-                            <hr></hr>
+                            <hr style={{ marginTop: 0, marginBottom: 20 }}></hr>
                             <Accordion style={{ marginBottom: 50 }}>
                                 <Card>
                                     <Accordion.Toggle as={Card.Header} variant="link" eventKey="3"> <h3>APS Racing</h3></Accordion.Toggle>

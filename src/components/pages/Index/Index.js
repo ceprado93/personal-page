@@ -56,14 +56,14 @@ const IndexPage = () => {
             <section>
                 <div className="bottom-carousel">
                     <Container>
-                        <h1 style={{ margin: '80px 0' }}>Projects</h1>
+                        <h1 style={{ margin: '100px 0' }}>Projects</h1>
                         <Row>
                             <Col md={4} className="project-card">
                                 <Card >
                                     <Card.Img variant="top" src={apsHome} />
                                     <Card.Body>
                                         <h3>APS Racing</h3>
-                                        <Link to="/portfolio"><Button className="btn-card" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
+                                        <Link to="/portfolio"><Button className="btn-card" >Portfolio</Button></Link>
 
                                     </Card.Body>
                                 </Card>
@@ -73,7 +73,7 @@ const IndexPage = () => {
                                     <Card.Img variant="top" src={wmGif} />
                                     <Card.Body>
                                         <h3>Wavemaps</h3>
-                                        <Link to="/portfolio"><Button className="btn-card" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
+                                        <Link to="/portfolio"><Button className="btn-card" >Portfolio</Button></Link>
 
                                     </Card.Body>
                                 </Card>
@@ -83,7 +83,7 @@ const IndexPage = () => {
                                     <Card.Img variant="top" src={fgHome} />
                                     <Card.Body>
                                         <h3>The food Game</h3>
-                                        <Link to="/portfolio"><Button className="btn-card" style={{ marginBottom: 40 }}>Portfolio</Button></Link>
+                                        <Link to="/portfolio"><Button className="btn-card" >Portfolio</Button></Link>
 
                                     </Card.Body>
                                 </Card>
