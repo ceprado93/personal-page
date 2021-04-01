@@ -108,3 +108,48 @@
     height: 80%;
     object-fit: cover;
 }
+
+@media (max-width: 767px) {
+
+    .reveal.fadeInRight{
+        display: block;
+    margin: 0 auto;
+    width: 60%;
+ 
+}
+
+}
+
+@media (max-width: 460px) {
+    .reveal.fadeInDown{ 
+    padding-bottom: 20px;
+}
+
+.responsive-p{
+    display: none;  
+}
+
+.responsive-second-p{
+    margin-left: 25px;
+    margin-right: 25px;   
+}
+
+.reveal.fadeInRight{
+    margin-left: 25px;
+    margin-right: 25px; 
+    width: 85%;
+ 
+}
+
+.technology{
+    height: 60%;
+
+}
+
+.technology img{
+    width: 80%;
+    height: 80%;
+    object-fit: cover;
+}
+}
+
