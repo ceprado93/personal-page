@@ -60,7 +60,7 @@ const IndexPage = () => {
                         <Row>
                             <Col md={4} className="project-card">
                                 <Card >
-                                    <Card.Img variant="top" src={apsHome} />
+                                    <Card.Img variant="top" src={apsHome} alt="aps" />
                                     <Card.Body>
                                         <h3>APS Racing</h3>
                                         <Link to="/portfolio"><Button className="btn-card" >Portfolio</Button></Link>
@@ -70,7 +70,7 @@ const IndexPage = () => {
                             </Col>
                             <Col md={4} className="project-card">
                                 <Card >
-                                    <Card.Img variant="top" src={wmGif} />
+                                    <Card.Img variant="top" src={wmGif} alt="wavemaps" />
                                     <Card.Body>
                                         <h3>Wavemaps</h3>
                                         <Link to="/portfolio"><Button className="btn-card" >Portfolio</Button></Link>
@@ -80,7 +80,7 @@ const IndexPage = () => {
                             </Col>
                             <Col md={4} className="project-card">
                                 <Card>
-                                    <Card.Img variant="top" src={fgHome} />
+                                    <Card.Img variant="top" src={fgHome} alt="foodgame" />
                                     <Card.Body>
                                         <h3>The food Game</h3>
                                         <Link to="/portfolio"><Button className="btn-card" >Portfolio</Button></Link>

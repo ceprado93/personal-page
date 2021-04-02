@@ -21,7 +21,7 @@ const Navigation = ({ handleAlert }) => {
         <Navbar expand="md" className={changeClass ? "navb filled" : "navb"} fixed="top" >
             <Link to="/personal-page">
                 <Navbar.Brand> <img
-                    alt=""
+                    alt="logo"
                     src={logo}
                     width="40"
                     height="40"
