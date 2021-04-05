@@ -3,7 +3,6 @@ import { useState, useLayoutEffect } from 'react'
 import { Container, Button, Row, Col, Card } from 'react-bootstrap'
 import { Link } from 'react-router-dom'
 import './home.css'
-import phHome from '../Portfolio/phones-home.png'
 import wmGif from './wavemaps.gif'
 import Typewriter from 'typewriter-effect';
 import fgHome from './fg-home.png'

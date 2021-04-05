@@ -1,22 +1,20 @@
 import { useState, useLayoutEffect } from 'react'
-import { Container, Carousel, Row, Col, Spinner, Accordion, Card } from 'react-bootstrap'
+import { Container, Row, Col, Spinner } from 'react-bootstrap'
 import './Portfolio.css'
-import wvLogin from './wm-login.png'
-import wvProfile from './wm-profile.png'
-import wvClusters from './wm-clusters.png'
-import wvWave from './wm-wave.png'
-import phHome from './phones-home.png'
-import phDetails from './phones-details.png'
-import wmGif from '../Index/wavemaps.gif'
-import fgHome from '../Index/fg-home.png'
-import fgGame from './fgGame.png'
-import apsRacing from './apsRacing.mp4'
-import apsHome from '../Index/apsRacing.png'
+import { Parallax } from "react-parallax";
 
 
-
-
-
+const insideStyles = {
+    background: "white",
+    padding: 20,
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)",
+    diplay: "flex",
+    flexDirection: 'column',
+    textAlign: 'center'
+};
 
 const Portfolio = () => {
     const [reveal, setReveal] = useState({ right: 'reveal fadeInRight', left: 'reveal fadeInLeft', down: 'reveal fadeInDown' })
@@ -35,127 +33,81 @@ const Portfolio = () => {
             <section className='portfolio'>
                 <Container>
                     {reveal.down === 'reveal fadeInDown visible' ? <h2 className={reveal.down}>Portfolio</h2> : <Spinner className="loader" animation="grow" variant="success" />}
+
                     <Row>
-                        <Col className={reveal.left}>
-                            <hr style={{ marginTop: 0, marginBottom: 20 }}></hr>
-                            <Accordion style={{ marginBottom: 50 }}>
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="3"> <h3>APS Racing</h3></Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="3">
-                                        <Card.Body><p>React app created for APS Racing, a motorSport media channel . Server created with NodeJS</p>
-                                            <Carousel>
-                                                <Carousel.Item>
-                                                    <video autoPlay="true" loop="true" data-reactid=".0.1.0.0">
-                                                        <source type="video/mp4" data-reactid=".0.1.0.0.0" src={apsRacing} />
-                                                    </video>
-                                                </Carousel.Item>
-                                            </Carousel>
-                                            <hr></hr>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="0"><h3> Wave Maps</h3></Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="0">
-                                        <Card.Body><p>Surf atlas done with React, NodeJs and MongoDB, using the google maps react API, their clusters and Geocoder.</p>
-                                            <Carousel>
-                                                <Carousel.Item>
-                                                    <img
-                                                        className="d-block w-100"
-                                                        src={wmGif}
-                                                        alt="First slide"
-                                                    />
+                        <Col md={{ span: 10, offset: 1 }} style={{ marginBottom: 150 }}>
+                            <Parallax bgImage='https://e00-marca.uecdn.es/assets/multimedia/imagenes/2019/01/26/15484986822524.jpg' strength={-100}>
+                                <div style={{ height: 400 }}>
+                                    <div style={insideStyles}>
+                                        <a href="https://github.com/ceprado93/personal-page">APS RACING</a>
+                                        <div>
+                                            <img className="stack" src='https://axaguildev.github.io/react-toolkit/latest/storybook/images/react.svg' alt='react' />
+                                            <img className="stack" src='https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg' alt='javascript' />
+                                            <img className="stack" src='https://blog.hostdime.com.co/wp-content/uploads/nodejs-servidor.png' alt='node js' />
+                                            <img className="stack" src='https://symbols.getvecta.com/stencil_74/148_axios-icon.351c8889a7.jpg' alt='Axios' />
+                                            <img className="stack" src='http://lineadecodigo.com/wp-content/uploads/2014/04/mongodb.png' alt='mongo db' />
+                                        </div>
+                                    </div>
+                                </div>
+                            </Parallax>
 
-                                                </Carousel.Item>
-                                                <Carousel.Item >
-                                                    <img
-                                                        className="d-block w-100"
-                                                        src={wvClusters}
-                                                        alt="Second slide"
-                                                    />
-                                                </Carousel.Item>
-                                                <Carousel.Item>
-                                                    <img
-                                                        className="d-block w-100"
-                                                        src={wvWave}
-                                                        alt="Third slide"
-                                                    />
-                                                </Carousel.Item>
-                                                <Carousel.Item>
-                                                    <img
-                                                        className="d-block w-100"
-                                                        src={wvLogin}
-                                                        alt="Third slide"
-                                                    />
-                                                </Carousel.Item>
-                                                <Carousel.Item>
-                                                    <img
-                                                        className="d-block w-100"
-                                                        src={wvProfile}
-                                                        alt="Third slide"
-                                                    />
-
-                                                </Carousel.Item>
-                                            </Carousel>
-                                            <hr></hr>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="1"> <h3>Food Game</h3></Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="1">
-                                        <Card.Body><p>JS canvas game</p>
-                                            <Carousel>
-                                                <Carousel.Item>
-                                                    <img
-                                                        className="d-block w-100"
-                                                        src={fgHome}
-                                                        alt="First slide"
-                                                    />
-
-                                                </Carousel.Item>
-                                                <Carousel.Item >
-                                                    <img
-                                                        className="d-block w-100"
-                                                        src={fgGame}
-                                                        alt="Second slide"
-                                                    />
-                                                </Carousel.Item>
-
-                                            </Carousel>
-                                            <hr></hr>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                                <Card>
-                                    <Accordion.Toggle as={Card.Header} variant="link" eventKey="2"><h3> The phone Cave</h3></Accordion.Toggle>
-                                    <Accordion.Collapse eventKey="2">
-                                        <Card.Body><p>React app connected to a REST API. API created with NodeJS</p>
-                                            <Carousel>
-                                                <Carousel.Item>
-                                                    <img
-                                                        className="d-block w-100"
-                                                        src={phHome}
-                                                        alt="First slide"
-                                                    />
-
-                                                </Carousel.Item>
-                                                <Carousel.Item >
-                                                    <img
-                                                        className="d-block w-100"
-                                                        src={phDetails}
-                                                        alt="Second slide"
-                                                    />
-                                                </Carousel.Item>
-
-                                            </Carousel>
-                                            <hr></hr>
-                                        </Card.Body>
-                                    </Accordion.Collapse>
-                                </Card>
-                            </Accordion>
                         </Col>
                     </Row>
+                    <Row>
+                        <Col md={{ span: 10, offset: 1 }} style={{ marginBottom: 150 }}>
+                            <Parallax bgImage='https://images.squarespace-cdn.com/content/v1/527c03e4e4b03247a686bb74/1495663912038-GL0LA6795260JW76QPPR/ke17ZwdGBToddI8pDm48kFWxnDtCdRm2WA9rXcwtIYR7gQa3H78H3Y0txjaiv_0fDoOvxcdMmMKkDsyUqMSsMWxHk725yiiHCCLfrh8O1z5QPOohDIaIeljMHgDF5CVlOqpeNLcJ80NK65_fV7S1UcTSrQkGwCGRqSxozz07hWZrYGYYH8sg4qn8Lpf9k1pYMHPsat2_S1jaQY3SwdyaXg/B84I5421-2A.JPG?format=1500w' strength={-100}>
+                                <div style={{ height: 400 }}>
+                                    <div style={insideStyles}>
+                                        <a href="https://github.com/ceprado93/final-project">WAVE MAPS</a>
+                                        <div>
+                                            <img className="stack" src='https://axaguildev.github.io/react-toolkit/latest/storybook/images/react.svg' alt='react' />
+                                            <img className="stack" src='https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg' alt='javascript' />
+                                            <img className="stack" src='https://blog.hostdime.com.co/wp-content/uploads/nodejs-servidor.png' alt='node js' />
+                                            <img className="stack" src='https://symbols.getvecta.com/stencil_74/148_axios-icon.351c8889a7.jpg' alt='Axios' />
+                                            <img className="stack" src='http://lineadecodigo.com/wp-content/uploads/2014/04/mongodb.png' alt='mongo db' />
+                                        </div>
+                                    </div>
+                                </div>
+                            </Parallax>
+
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={{ span: 10, offset: 1 }} style={{ marginBottom: 150 }}>
+                            <Parallax bgImage='https://cdn.cienradios.com/wp-content/uploads/sites/3/2020/10/Homero-simpson.jpg' strength={-100}>
+                                <div style={{ height: 400 }}>
+                                    <div style={insideStyles}>
+                                        <a href="https://github.com/Monch87/Project1-Homer_donuts-VIDEOGAME">FOOD GAME</a>
+                                        <div>
+                                            <img className="stack" src='https://cdn.iconscout.com/icon/free/png-512/handlebars-282936.png' alt='mongo db' />
+                                            <img className="stack" src='http://lineadecodigo.com/wp-content/uploads/2014/04/mongodb.png' alt='mongo db' />
+                                            <img className="stack" src='https://blog.hostdime.com.co/wp-content/uploads/nodejs-servidor.png' alt='node js' />
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </Parallax>
+
+                        </Col>
+                    </Row>
+                    <Row>
+                        <Col md={{ span: 10, offset: 1 }} style={{ marginBottom: 150 }}>
+                            <Parallax bgImage='https://marketingland.com/wp-content/ml-loads/2017/10/Main_Image_Phone.jpg' strength={-100}>
+                                <div style={{ height: 400 }}>
+                                    <div style={insideStyles}>
+                                        <a href="https://github.com/ceprado93/reto_web">THE PHONE CAVE</a>
+                                        <div>
+                                            <img className="stack" src='https://axaguildev.github.io/react-toolkit/latest/storybook/images/react.svg' alt='react' />
+                                            <img className="stack" src='https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg' alt='javascript' />
+                                            <img className="stack" src='https://blog.hostdime.com.co/wp-content/uploads/nodejs-servidor.png' alt='node js' />
+                                            <img className="stack" src='http://lineadecodigo.com/wp-content/uploads/2014/04/mongodb.png' alt='mongo db' />
+                                        </div>
+                                    </div>
+                                </div>
+                            </Parallax>
+                        </Col>
+                    </Row>
+
                 </Container>
             </section>
         </>

@@ -109,6 +109,12 @@
     object-fit: cover;
 }
 
+.bottom-btn{
+    display: flex;
+    margin:90px auto;
+    width: 25%;
+}
+
 @media (max-width: 767px) {
 
     .reveal.fadeInRight{
@@ -116,6 +122,10 @@
     margin: 0 auto;
     width: 60%;
  
+}
+
+.bottom-btn{
+    width: 40%;
 }
 
 }
@@ -150,6 +160,10 @@
     width: 80%;
     height: 80%;
     object-fit: cover;
+}
+
+.bottom-btn{
+    width: 70%;
 }
 }
 

@@ -37,7 +37,6 @@
     width: 100%;
     background-size: cover;
     background-position: 100% 30%;
-    margin-bottom: 150px;
 }
 
 .portfolio h3{
@@ -58,12 +57,54 @@
     margin-top: 80px;
 }
 
+.bck-img{
+  z-index: -1;
+  background-size: cover;
+  background-position: 100% 50%;
+
+}
+
+.project1{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding:125px ;
+  background-color: transparent;
+  margin-bottom: 100px;
+  backdrop-filter: grayscale(100%);
+  transform: translate3d(0px, 280px, 0px);
+}
+
+.project1 h1{
+    color: white;
+}
+
+.port-btn{
+  margin: 10px auto 20px auto;
+  display: flex;
+  justify-content: center;
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  
+}
+
+.stack{
+  width: 10%;
+}
+
 @media (max-width: 460px) {
   .reveal.fadeInDown{
     font-size: 3em;
     margin-bottom: 20px;
 
   }
+
+  .stack{
+  width: 15%;
+}
 }
 
 @media (max-width: 376px) {
@@ -75,5 +116,9 @@
 
   .portfolio h3{
     font-size: 1em;
+}
+
+.stack{
+  width: 20%;
 }
 }
