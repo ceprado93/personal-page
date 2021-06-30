@@ -1,14 +1,12 @@
 .navb {
     font-size: 20px;
     text-align: center;
-    padding: 7px;
+    padding: 10px 3rem;
     width: 100%;
     color: antiquewhite;
     top: 0;
-    background-color: white;
+    background-color: transparent;
     transition: all .1s;
-    border-bottom: 5px solid rgba(0,179,137,255);
-
 } 
 
 .navb.filled {
