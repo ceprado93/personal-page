@@ -1,8 +1,16 @@
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-weight: 200;
-  font-family: 'Cutive Mono', monospace;}
+  font-family: "Cutive Mono", monospace;
+  background-color: rgb(250, 250, 250);
+}
 
-h1, h2, h3 {
+h1,
+h2,
+h3 {
   margin-bottom: 20px;
   font-weight: 200;
 }

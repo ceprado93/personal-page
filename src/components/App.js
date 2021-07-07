@@ -1,21 +1,15 @@
-import { Component } from 'react'
-import './App.css'
+import { Component } from "react";
+import "./App.css";
 
-import Routes from './routes/Routes'
-import Footer from './layout/Footer/Footer'
-import Navigation from './layout/Navigation/Navigation'
-
-
+import Routes from "./routes/Routes";
+import Footer from "./layout/Footer/Footer";
+import Navigation from "./layout/Navigation/Navigation";
 
 class App extends Component {
-
   constructor() {
-    super()
-    this.state = {
-
-    }
+    super();
+    this.state = {};
   }
-
 
   render() {
     return (
@@ -26,8 +20,8 @@ class App extends Component {
         </main>
         <Footer />
       </>
-    )
+    );
   }
 }
 
-export default App
+export default App;

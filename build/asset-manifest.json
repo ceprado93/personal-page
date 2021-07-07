@@ -1,36 +1,25 @@
 {
   "files": {
-    "main.css": "/personal-page/static/css/main.a4685501.chunk.css",
-    "main.js": "/personal-page/static/js/main.f3379a47.chunk.js",
-    "main.js.map": "/personal-page/static/js/main.f3379a47.chunk.js.map",
+    "main.css": "/personal-page/static/css/main.03ee68b6.chunk.css",
+    "main.js": "/personal-page/static/js/main.618d397a.chunk.js",
+    "main.js.map": "/personal-page/static/js/main.618d397a.chunk.js.map",
     "runtime-main.js": "/personal-page/static/js/runtime-main.27b423c5.js",
     "runtime-main.js.map": "/personal-page/static/js/runtime-main.27b423c5.js.map",
     "static/css/2.150d169a.chunk.css": "/personal-page/static/css/2.150d169a.chunk.css",
-    "static/js/2.c47dbea2.chunk.js": "/personal-page/static/js/2.c47dbea2.chunk.js",
-    "static/js/2.c47dbea2.chunk.js.map": "/personal-page/static/js/2.c47dbea2.chunk.js.map",
+    "static/js/2.2b2a5a39.chunk.js": "/personal-page/static/js/2.2b2a5a39.chunk.js",
+    "static/js/2.2b2a5a39.chunk.js.map": "/personal-page/static/js/2.2b2a5a39.chunk.js.map",
     "index.html": "/personal-page/index.html",
     "static/css/2.150d169a.chunk.css.map": "/personal-page/static/css/2.150d169a.chunk.css.map",
-    "static/css/main.a4685501.chunk.css.map": "/personal-page/static/css/main.a4685501.chunk.css.map",
-    "static/js/2.c47dbea2.chunk.js.LICENSE.txt": "/personal-page/static/js/2.c47dbea2.chunk.js.LICENSE.txt",
-    "static/media/apsRacing.3540a9fc.png": "/personal-page/static/media/apsRacing.3540a9fc.png",
-    "static/media/apsRacing.c83c56fa.mp4": "/personal-page/static/media/apsRacing.c83c56fa.mp4",
-    "static/media/fg-home.5d8b5cbb.png": "/personal-page/static/media/fg-home.5d8b5cbb.png",
-    "static/media/fgGame.fd988894.png": "/personal-page/static/media/fgGame.fd988894.png",
+    "static/css/main.03ee68b6.chunk.css.map": "/personal-page/static/css/main.03ee68b6.chunk.css.map",
+    "static/js/2.2b2a5a39.chunk.js.LICENSE.txt": "/personal-page/static/js/2.2b2a5a39.chunk.js.LICENSE.txt",
     "static/media/logo.9fabc46b.png": "/personal-page/static/media/logo.9fabc46b.png",
-    "static/media/phones-details.ee8b9aae.png": "/personal-page/static/media/phones-details.ee8b9aae.png",
-    "static/media/phones-home.7a95cc02.png": "/personal-page/static/media/phones-home.7a95cc02.png",
-    "static/media/photo.284d8085.JPG": "/personal-page/static/media/photo.284d8085.JPG",
-    "static/media/wavemaps.a770ff35.gif": "/personal-page/static/media/wavemaps.a770ff35.gif",
-    "static/media/wm-clusters.d1682804.png": "/personal-page/static/media/wm-clusters.d1682804.png",
-    "static/media/wm-login.9f0827c2.png": "/personal-page/static/media/wm-login.9f0827c2.png",
-    "static/media/wm-profile.75f35dde.png": "/personal-page/static/media/wm-profile.75f35dde.png",
-    "static/media/wm-wave.52793c05.png": "/personal-page/static/media/wm-wave.52793c05.png"
+    "static/media/photo.284d8085.JPG": "/personal-page/static/media/photo.284d8085.JPG"
   },
   "entrypoints": [
     "static/js/runtime-main.27b423c5.js",
     "static/css/2.150d169a.chunk.css",
-    "static/js/2.c47dbea2.chunk.js",
-    "static/css/main.a4685501.chunk.css",
-    "static/js/main.f3379a47.chunk.js"
+    "static/js/2.2b2a5a39.chunk.js",
+    "static/css/main.03ee68b6.chunk.css",
+    "static/js/main.618d397a.chunk.js"
   ]
 }

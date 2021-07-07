@@ -1,124 +1,178 @@
-.reveal.fadeInDown{ 
-    display: flex;
-    justify-content: center;
-    color:black;
-    padding-top: 90px;
-    padding-bottom: 60px;
-    font-size: 4em;
-    letter-spacing: .15em;
-    text-transform: uppercase;
-    margin-bottom: 40px;
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 1s;
-    transform: translateY(-120px);
+.reveal.fadeInDown {
+  display: flex;
+  justify-content: center;
+  color: black;
+  padding-bottom: 60px;
+  font-size: 4em;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
+  transform: translateY(-120px);
+}
+
+.about .reveal.fadeInDown {
+  padding-top: 90px;
 }
 
 .reveal.fadeInDown.visible {
-    transform: translateY(0);
-    opacity: 1;
+  transform: translateY(0);
+  opacity: 1;
 }
 
-.reveal.fadeInLeft{
-    
-    opacity: 0;
-    transition-property: all;
-    transition-duration: 1s;
-    transform: translateX(-100px);
+.reveal.fadeInLeft {
+  opacity: 0;
+  transition-property: all;
+  transition-duration: 1s;
+  transform: translateX(-100px);
 }
 
 .reveal.fadeInLeft.visible {
-    transform: translateX(0);
-    opacity: 1;
+  transform: translateX(0);
+  opacity: 1;
 }
+
+/* .scroll-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+} */
 
 .portfolio {
-    padding-top: 50px;
-    width: 100%;
-    background-size: cover;
-    background-position: 100% 30%;
+  padding-top: 50px;
+  width: 100%;
+  background-size: cover;
+  background-position: 100% 30%;
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
 }
 
-.portfolio h3{
-   color: black;
-   display: flex;
-   justify-content: center;
-   letter-spacing: .15em;
-   margin-bottom: 0;
+.first__section {
+  height: 100vh;
+  scroll-snap-align: center;
+  display: flex;
+  align-items: center;
+}
+
+.portfolio__project {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  align-items: center;
+}
+
+.project__image {
+  width: 60%;
+  height: 100%;
+}
+
+.project__image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  /* height: max-content; */
+}
+
+.project__desc span {
+  color: #ea0025;
+}
+
+.project__desc {
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.project__tecnologies {
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.project__tecnologies img {
+  width: 10%;
+  object-fit: contain;
+}
+
+.portfolio h3 {
+  color: black;
+  display: flex;
+  justify-content: center;
+  letter-spacing: 0.15em;
+  margin-bottom: 0;
 }
 
 .portfolio p {
-   color: black;
-   display: flex;
-   justify-content: center;
+  color: black;
+  display: flex;
+  justify-content: center;
 }
 
-.portfolio hr{
-    margin-top: 80px;
+.portfolio hr {
+  margin-top: 80px;
 }
 
-.bck-img{
+.bck-img {
   z-index: -1;
   background-size: cover;
   background-position: 100% 50%;
-
 }
 
-.project1{
+.project1 {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding:125px ;
+  padding: 125px;
   background-color: transparent;
   margin-bottom: 100px;
   backdrop-filter: grayscale(100%);
   transform: translate3d(0px, 280px, 0px);
 }
 
-.project1 h1{
-    color: white;
+.project1 h1 {
+  color: white;
 }
 
-.port-btn{
+.port-btn {
   margin: 10px auto 20px auto;
   display: flex;
   justify-content: center;
   background-color: transparent;
   border: 2px solid white;
   color: white;
-  
 }
 
-.stack{
+.stack {
   width: 10%;
 }
 
 @media (max-width: 460px) {
-  .reveal.fadeInDown{
+  .reveal.fadeInDown {
     font-size: 3em;
     margin-bottom: 20px;
-
   }
 
-  .stack{
-  width: 15%;
-}
+  .stack {
+    width: 15%;
+  }
 }
 
 @media (max-width: 376px) {
-  .reveal.fadeInDown{
+  .reveal.fadeInDown {
     font-size: 2em;
     margin-bottom: 20px;
-
   }
 
-  .portfolio h3{
+  .portfolio h3 {
     font-size: 1em;
-}
+  }
 
-.stack{
-  width: 20%;
-}
+  .stack {
+    width: 20%;
+  }
 }
